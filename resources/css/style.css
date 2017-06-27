@@ -1,80 +1,116 @@
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+}
+
 header {
     display: flex;
     align-items: center;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     width: 100%;
-    height: 80px;
-    border-bottom: 1px solid black;
-    background-color: white;
-    font-family: Verdana;
-    font-size: 14px;
-    font-weight: bold;
+    height: 69px;
+    border-bottom: 1px solid seashell;
     justify-content: space-between;
 }
 
-span {
-    display: inline-block;
-    padding: 20px 10px;
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 69px;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #logo {
-    color: mediumaquamarine;
+    color: white;
     display: flex;
     align-items: center;
     flex-grow: 1;
-    padding-left: 30px;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    margin-right: 32px;
-}
-
-.column.large {
-    width: 630px;
-}
-
-.column.medium {
-    width: 300px;
-}
-
-.column.small {
-    width: 240px;
-}
-
-div {
-    border: 1px solid black;
+    padding-left: 10px;
+    height: 50px;
 }
 
 header a {
-    color: black
+    color: seashell;
+    text-decoration: underline;
+    display: inline-block;
+    padding: 20px 10px;
+    flex-grow: 1;
+}
+
+.main {
+    padding-top: 69px;
+    opacity: 0.9;
+    width: 1200px;
+    margin: auto;
+}
+
+div {
+    display: block;
+}
+h2, h3, h4 {
+    margin: 0;
+    padding: 10px;
+}
+
+#mission {
+    height: 700px;
+    padding-top: 70px;
+    background-image: url("../images/img-mission-background.jpg");
+}
+
+#mission .content {
+    margin: auto;
+    background-color: black;
+    width: 100%;
+}
+
+#locations {
+    width: 1200px;
+    height: 500px;
+    background-image: url("../images/img-locations-background.jpg");
+}
+
+.location {
+    opacity: 1;
+    margin: 15px 20px;
+    height: 300px;
+    width: 300px;
+}
+
+#store {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1000px;
+}
+
+
+.item {
+    height: 200px;
+    width: 300px;
+    margin: 10px:
+}
+
+.item img {
+    height: 200px;
+    margin: 10px;
+    display: block;
 }
 
 footer {
-    background-color: MediumAquamarine;
     margin: auto;
-    font-family: Verdana;
-    font-size: 12px;
-}
-
-.content {
-    display: inline-flex;
-    width: 1232px;
-    margin: 0 auto 78px auto;
-    padding-top: 116px;
-}
-
-.story {
-    font-family: Georgia;
-    font-size: 17px;
-    color: black;
-}
-
-.image-content {
-    font-family: Georgia;
-    font-weight: bold;
-    font-size: 30px;
-    color: white;
+    height: 200px;
+    margin-bottom: 20px;
 }
